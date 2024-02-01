@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangaroo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body> 
+    <header>
+        <h1 class="game-title">Stage 1</h1>
+    </header>
+    <section class="main-content">
+        <div class="letters-container">
+            <div class="keyboard-row">
+                <button class="letter-btn" id="letter1" value="q">q</button>
+                <button class="letter-btn" id="letter2" value="w">w</button>
+                <button class="letter-btn" id="letter3" value="e">e</button>
+                <button class="letter-btn" id="letter4" value="r">r</button>
+                <button class="letter-btn" id="letter5" value="t">t</button>
+                <button class="letter-btn" id="letter6" value="y">y</button>
+                <button class="letter-btn" id="letter7" value="u">u</button>
+                <button class="letter-btn" id="letter8" value="i">i</button>
+                <button class="letter-btn" id="letter9" value="o">o</button>
+                <button class="letter-btn" id="letter10" value="p">p</button>
+            </div>
+            <div class="keyboard-row">
+                <button class="letter-btn" id="letter11" value="a">a</button>
+                <button class="letter-btn" id="letter12" value="s">s</button>
+                <button class="letter-btn" id="letter13" value="d">d</button>
+                <button class="letter-btn" id="letter14" value="f">f</button>
+                <button class="letter-btn" id="letter15" value="g">g</button>
+                <button class="letter-btn" id="letter16" value="h">h</button>
+                <button class="letter-btn" id="letter17" value="j">j</button>
+                <button class="letter-btn" id="letter18" value="k">k</button>
+                <button class="letter-btn" id="letter19" value="l">l</button>
+            </div>
+            <div class="keyboard-row">
+                <button class="letter-btn" id="letter20" value="z">z</button>
+                <button class="letter-btn" id="letter21" value="x">x</button>
+                <button class="letter-btn" id="letter22" value="c">c</button>
+                <button class="letter-btn" id="letter23" value="v">v</button>
+                <button class="letter-btn" id="letter24" value="b">b</button>
+                <button class="letter-btn" id="letter25" value="n">n</button>
+                <button class="letter-btn" id="letter26" value="m">m</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="answers-field">
+        <div class="categories-container">
+            <h2 class="category" id="category"></h2>
+        </div>
+        <div class="answers-container" id="answers-container">
+        </div>
+    </section>
+
+
+    <section class="status" id="status">
+        <div class="life" id="life">
+            <div class="error"></div>
+            <div class="error"></div>
+            <div class="error"></div>
+        </div>
+        <div class="progress" id="progress">
+            <div class="prog"></div>
+            <div class="prog"></div>
+            <div class="prog"></div>
+            <div class="prog"></div>
+            <div class="prog"></div>
+            <div class="prog"></div>
+            <div class="prog"></div>
+            <div class="prog"></div>
+            <div class="prog"></div>
+            <div class="prog"></div>
+        </div>
+    </section>
+
+
+
+    <section class="game-section">
+        <div class="score" id="score">
+            <span>Points: 0</span>
+        </div>
+        <div>
+            <input type="radio" id="vowel" name="clueType" value="vowel" checked>
+            <label for="vowel">Vowel</label>
+    
+            <input type="radio" id="consonant" name="clueType" value="consonant">
+            <label for="consonant">Consonant</label>
+        </div>
+        <button id="clue-button">Get Clue</button>
+    </section>
+    
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
